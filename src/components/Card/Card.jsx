@@ -2,21 +2,19 @@ import React from 'react'
 import "./Card.scss"
 
 const Card = (props) => {
-  const { results, name } = props;
-  return results.map(({name, description, image_url}) => {
-    return (
-      <div className="card">
-        <h2 className="card__heading">{name}</h2>
-        <div className="card__imgHolder">
-          <img src={image_url} alt="" className="card__image"/>
-        </div>
-        <div className="card__desc">
-          {description}
-        </div>
+  const {name, image_url, description, ph, abv} = props.beer;
+  
+  
+  return (
+    <div className="card">
+      <div className="card__outer">
+        <h2>{name}</h2>
+        <img src={image_url} alt="" className="card__image" />
+        <p>pH : {ph} abv: {abv}</p>
+        <p className="card__desc">{description}</p>
+      </div>
       </div>
     )
   }
-  )
-}
 
 export default Card

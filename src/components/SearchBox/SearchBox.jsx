@@ -7,7 +7,7 @@ const SearchBox = (props) => {
   return (
     <div className="searchbox">
       <label className="searchbox__label">Search</label>
-      <input type="text" value={searchTerm} onInput={handleInput} className="searchbox__input"/>
+      <input type="text"  onChange={handleInput} className="searchbox__input"/>
     </div>
   )
 }

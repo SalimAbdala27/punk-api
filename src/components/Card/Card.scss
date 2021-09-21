@@ -1,13 +1,19 @@
 .card{
-  width: 35vw;
-  height: 70vh;
+  width: 20vw;
+  height: 50vh;
   border: 2px solid black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+  &__outer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
   &__image{
-    height: 300px;
-    width: 150px;
+    height: 100px;
+    width: 50px;
+  }
+  &__desc{
+    margin: 10px;
+    
   }
 }
