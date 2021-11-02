@@ -1,0 +1,12 @@
+.filteritem{
+  margin-top: 25px;
+  &__label{
+    font-size: 25px;
+    color: #EEEEEE;
+  }
+  &__checkbox{
+    width: 50px;
+    height: 30px;
+    border: black solid 2px;
+  }
+}

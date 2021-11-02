@@ -4,16 +4,16 @@ import "./FilterItem.scss"
 const FilterItem = (props) => {
   const {handleFilterOne, handleFilterTwo, handleFilterThree} = props;
   return (
-    <div>
+    <div className="filteritem">
       <form action="">
-        <label htmlFor="">High ABV 6.0%</label>
-        <input type="checkbox" name="" id="" onClick={handleFilterOne}/>
+        <label htmlFor="" className="filteritem__label">High ABV 6.0%</label>
+        <input type="checkbox" name="" id="" className="filteritem__checkbox" onClick={handleFilterOne}/>
         <br />
-        <label htmlFor="">Classic Range</label>
-        <input type="checkbox" name="" id="" onClick={handleFilterTwo} />
+        <label htmlFor="" className="filteritem__label">Classic Range</label>
+        <input type="checkbox" name="" id="" className="filteritem__checkbox" onClick={handleFilterTwo} />
         <br />
-        <label htmlFor="">Acidic pH 4 or greater </label>
-        <input type="checkbox" name="" id="" onClick={handleFilterThree} />
+        <label htmlFor="" className="filteritem__label">Acidic pH 4 or greater </label>
+        <input type="checkbox" name="" id="" className="filteritem__checkbox" onClick={handleFilterThree} />
       </form>
     </div>
   )

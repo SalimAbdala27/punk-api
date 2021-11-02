@@ -1,7 +1,12 @@
 .card{
-  width: 20vw;
-  height: 50vh;
-  border: 2px solid black;
+  width: 16vw;
+  height: 40vh;
+  border: 4px solid #C33764;
+  border-radius: 10px;
+  background: #D66D75;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   &__outer{
     display: flex;
     justify-content: flex-start;
@@ -14,6 +19,6 @@
   }
   &__desc{
     margin: 10px;
-    
+    font-size: 10px;
   }
 }
